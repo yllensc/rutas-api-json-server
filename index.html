@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stytles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>rutasApi</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " id="navOptions">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RutasAPI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="nav-link" id="createRoute">Crea una nueva ruta</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ver las rutas existentes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--rutas-->
+      <div class="container-routes">
+        <table class="table table-light table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Ruta</th>
+                <th scope="col">Detalles</th>
+              </tr>
+            </thead>
+            <tbody class="body-tableRoutes">
+            </tbody>
+          </table>
+      </div>
+      <!--modal para crear rutas-->
+      <div class="modal" tabindex="-1" id="modalRoute">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+            </div>
+            <div class="modal-body">
+                <form id="form__addRoute" action="" method="post">
+                    <div id="registroForm">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Nombre</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Título"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="bSave">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modal de detalles-->
+    <script type="module" src="/js/functionsApiRest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
