@@ -1,7 +1,6 @@
 {
   "name": "rutas-api-json-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "server": "json-server -w db.json"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.3"
-  }
+  },
+  "description": ""
 }

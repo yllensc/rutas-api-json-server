@@ -18,7 +18,7 @@ export async function getRoutes(){
     console.log('Error de conexión:', error);
   }   
 }
-
+getRoutes();
 //Metodo POST
 export async function postData(formData,nameJson){
   debugger
