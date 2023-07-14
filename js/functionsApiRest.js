@@ -6,7 +6,7 @@
 import  {showRoutes} from "./functions.js";
 
 const URL = "http://localhost:3000"
-//const headers = new Headers ({'Content-Type': 'application/json'});
+const headers = new Headers ({'Content-Type': 'application/json'});
 
 //metodo GET
 export async function getRoutes(){
@@ -18,24 +18,24 @@ export async function getRoutes(){
     console.log('Error de conexión:', error);
   }   
 }
-getRoutes();
 
 //Metodo POST
-//export async function postMovie(formData){
-//    let config = {
-//        method: 'POST',
-//        headers: headers,
-//        body: JSON.stringify(formData)
-//    }
-//    try {
-//      let response = await fetch(`${URL}/peliculas`,config);
-//      let moviesPost = await response.json();
-//      getMovies();
-//    } catch (error) {
-//      console.log('Error de conexión:', error);
-//    }
-//
-//}
+export async function postData(formData,nameJson){
+  debugger
+    let config = {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(formData)
+    }
+    try {
+      let response = await fetch(`${URL}/${nameJson}`,config);
+      let responseJson = await response.json();
+      getRoutes();
+    } catch (error) {
+      console.log('Error de conexión:', error);
+    }
+
+}
 //
 //export async function deleteMovie(movieId) {
 //  try {

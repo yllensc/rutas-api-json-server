@@ -1,32 +1,42 @@
 {
   "routes": [
-    { "id": 1, "name": "Cafetera" },
-    { "id": 2, "name": "Del Sol" }
+    {
+      "id": 1,
+      "name": "Cafetera"
+    },
+    {
+      "id": 2,
+      "name": "Del Sol"
+    },
+    {
+      "name": "ffffff",
+      "id": 3
+    }
   ],
   "stops": [
     {
-        "id": 1,
-        "nameStop": "Manizales",
-        "routeId": 1,
-        "image": ""
+      "id": 1,
+      "nameStop": "Manizales",
+      "routeId": 1,
+      "image": ""
     },
     {
-        "id": 2,
-        "nameStop": "Armenia",
-        "routeId": 1,
-        "image": ""
+      "id": 2,
+      "nameStop": "Armenia",
+      "routeId": 1,
+      "image": ""
     },
     {
-        "id": 3,
-        "nameStop": "Tunja",
-        "routeId": 2,
-        "image": ""
+      "id": 3,
+      "nameStop": "Tunja",
+      "routeId": 2,
+      "image": ""
     },
     {
-        "id": 4,
-        "nameStop": "Bucaramanga",
-        "routeId": 2,
-        "image": ""
+      "id": 4,
+      "nameStop": "Bucaramanga",
+      "routeId": 2,
+      "image": ""
     }
   ]
 }
