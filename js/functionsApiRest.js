@@ -51,11 +51,12 @@ export async function postData(formData,nameJson){
 //}
 //
 //
-//export async function patchMovie(movieData) {
-//    let config = {
-//        method: 'PUT',
-//        headers: headers,
-//        body: JSON.stringify(movieData)
-//    }
-//    let act = await (await fetch(`${URL}/peliculas/${movie.id}`,config)).json();
-//}
+export async function patchData(dataEdit,id,nameJson) {
+  debugger
+    let config = {
+        method: 'PUT',
+        headers: headers,
+        body: JSON.stringify(dataEdit)
+    }
+    let act = await (await fetch(`${URL}/${nameJson}/${id}`,config)).json();
+}

@@ -66,7 +66,6 @@
       </div>
     </div>
   </div>
-  </div>
   <!--modal de puntos de la ruta-->
   <div class="modal" tabindex="-1" id="modalStops">
     <div class="modal-dialog">
@@ -83,15 +82,32 @@
               </div>
               <div class="mb-3">
                 <label for="imageInputStop" class="form-label">Imagen</label>
-                <input type="file" id="imageInputStop" class="form-control" placeholder="imagen de la parada"
-                  accept=".png, .jpg, .jpeg">
+                <input type="url" id="imageInputStop" class="form-control" placeholder="imagen de la parada">
               </div>
-                <button type="submit" class="btn btn-primary" id="bSave">Guardar</button>
+              <button type="submit" class="btn btn-primary" id="bSaveStops">Guardar</button>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+    <!--modal detalles-->
+    <div class="modal" tabindex="-1" id="modalRouteDetails">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles de la ruta</h5>
+          </div>
+          <div class="modal-body">
+            <div class="container-stops-route">
+
+            </div>
+            <div class="delete-allStops">
+              <button id="btnDeleteAllStops">Eliminar todos los puntos</button>
+            </div>
+        </div>
+      </div>
+    </div>
   <script type="module" src="/js/functionsApiRest.js"></script>
   <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

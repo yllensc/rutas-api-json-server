@@ -1,24 +1,12 @@
 {
   "routes": [
     {
-      "id": 1,
-      "name": "Cafetera"
+      "name": "gi\n\n",
+      "id": 1
     },
     {
       "id": 2,
       "name": "Del Sol"
-    },
-    {
-      "name": "ffffff",
-      "id": 3
-    },
-    {
-      "name": "dasd",
-      "id": 4
-    },
-    {
-      "name": "prueba",
-      "id": 5
     }
   ],
   "stops": [
@@ -26,7 +14,7 @@
       "id": 1,
       "nameStop": "Manizales",
       "routeId": 1,
-      "image": ""
+      "image": "https://www.cityexpress.com/blog/descubre-colombia-a-traves-de-la-feria-de-manizales"
     },
     {
       "id": 2,

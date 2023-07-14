@@ -8,3 +8,7 @@ export const bSave = document.querySelector('#bSave');
 export const viewButtons = document.querySelectorAll('.viewButton');
 export const iconStops = document.querySelectorAll('.iconStop');
 export const modalStops = document.querySelector('#modalStops');
+export const formStop = document.getElementById('form__addStop');
+export const nameStop = document.querySelector('#nameInputStop');
+export const imageInput = document.querySelector('#imageInputStop');
+export const bSaveStop = document.querySelector('#bSaveStop');
