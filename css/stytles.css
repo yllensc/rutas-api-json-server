@@ -27,3 +27,53 @@ body{
     height: 50px;
     border-radius: 50%;
 }
+
+
+.container-stops-route {
+    padding: 20px;
+  }
+  
+  .container-stops-route h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .stopInfo {
+    margin-bottom: 20px;
+  }
+  
+  .stopInfo p {
+    margin: 5px 0;
+  }
+  
+  .stopInfo strong {
+    font-weight: bold;
+  }
+  
+  .stopInfo img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    display: block; /* Eliminar espacio adicional debajo de la imagen */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+  }
+  
+  .delete-allStops {
+    margin-top: 20px;
+  }
+  
+  .delete-allStops button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  

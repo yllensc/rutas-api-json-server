@@ -1,9 +1,6 @@
-//metodo GET
-//metodo POST
-//metodo PATCH
-//metodo DELETE
 
-import  {showRoutes} from "./functions.js";
+
+import  {showRoutes, showStops} from "./functions.js";
 
 const URL = "http://localhost:3000"
 const headers = new Headers ({'Content-Type': 'application/json'});
@@ -12,13 +9,22 @@ const headers = new Headers ({'Content-Type': 'application/json'});
 export async function getRoutes(){
   try {
     let response = await(await fetch(`${URL}/routes`)).json();
-    console.log(response);
     showRoutes(response);
   } catch (error) {
     console.log('Error de conexión:', error);
   }   
 }
 getRoutes();
+export async function getStops(){
+  try {
+    debugger
+    let response = await(await fetch(`${URL}/stops`)).json();
+    console.log(response);
+    return response;
+  } catch (error) {
+    throw error;
+  }   
+}
 //Metodo POST
 export async function postData(formData,nameJson){
   debugger
@@ -36,21 +42,21 @@ export async function postData(formData,nameJson){
     }
 
 }
-//
-//export async function deleteMovie(movieId) {
-//  try {
-//    let config = {
-//           method: 'DELETE',
-//           headers: headers,
-//           body: JSON.stringify({ id: movieId })
-//       };
-//    let del = await(await fetch(`${URL}/peliculas/${movieId}`,config)).json();
-//  } catch (error) {
-//    console.log('Error de conexión:', error);
-//  }
-//}
-//
-//
+
+export async function deleteData(dataId, nameJson) {
+  try {
+    let config = {
+           method: 'DELETE',
+           headers: headers,
+           body: JSON.stringify({ id: dataId })
+       };
+    let del = await(await fetch(`${URL}/${nameJson}/${dataId}`,config)).json();
+  } catch (error) {
+    console.log('Error de conexión:', error);
+  }
+}
+
+
 export async function patchData(dataEdit,id,nameJson) {
   debugger
     let config = {
